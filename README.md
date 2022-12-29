@@ -1,2 +1,2 @@
 # AutomatedLoginTests
-automated login testcases for N11
+automated login, search and shopping activities for HepsiBurada
