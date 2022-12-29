@@ -1,10 +1,10 @@
 Content of the Project
 
-Automate the manual test cases for N11
+Automate the manual test cases for HepsiBurada
 
 Tools and Technologies :
 
-Selenium WebDriver, JUnit, Java
+Selenium Bonigarcia, Java
 
 Patterns :
 
