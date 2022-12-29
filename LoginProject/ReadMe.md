@@ -1,6 +1,8 @@
 Content of the Project
 
-Automate the manual test cases for N11
+Automate the manual test cases for Hepsiburada
+
+You can manage email and password inputs in config.properties
 
 Tools and Technologies :
 
@@ -23,7 +25,7 @@ Firstly for a success login you should update your valid username and password  
 
 Path to file  : src/test/resources/Config/config.properties
 
-Then click the testcases in RunnerLogin to run.
+Then click the testcases in TestGender to run.
 
 This project will be developed. 
 

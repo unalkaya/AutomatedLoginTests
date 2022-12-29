@@ -1,2 +1,2 @@
 # AutomatedLoginTests
-automated login testcases for N11
+automated login testcases for HepsiBurada

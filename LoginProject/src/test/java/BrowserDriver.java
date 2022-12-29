@@ -1,4 +1,5 @@
 import Utils.ConfigReader;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.TestInstance;
@@ -10,7 +11,7 @@ import java.util.Properties;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class BrowserDriver {
 
-    protected  WebDriver driver;
+    static  WebDriver driver;
     TestFunctions testFunctions;
     Properties properties = new Properties();
     ConfigReader configReader;
@@ -24,16 +25,18 @@ public class BrowserDriver {
     public void setUpDriver(){
         getValueOfProperty();
         String appUrl = properties.getProperty("appUrl");
-        System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.get(appUrl);
         testFunctions = new TestFunctions(driver);
     }
 
-    @AfterAll
-    public void tearDown(){
-        driver.quit();
-    }
+   /* @AfterAll
+     public void tearDown(){
+       driver.quit();
+       }
+
+    */
 
 
 }
